@@ -1,0 +1,20 @@
+Stop-Process -Id 15756, 5704, 16656, 16768 -Force
+
+
+# 1. Initialize Git in your project folder
+git init
+
+# 2. Stage all your .ps1 files and configuration
+git add .
+
+# 3. Commit your changes
+git commit -m "Initial commit of PowerShell scripts"
+
+# 4. Rename the default branch to main
+git branch -M main
+
+# 5. Link your local repo to your GitHub repo URL
+git remote add origin https://github.com/lcordova1988/PowershellScripts
+
+# 6. Push your files to GitHub
+git push -u origin main
